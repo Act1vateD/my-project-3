@@ -1,0 +1,248 @@
+/*reset css*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: black;
+  font-family: "Inter";
+}
+
+.wrapper {
+  max-width: 1440px;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+._container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.header-logo {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+
+.header {
+  min-height: 83px;
+  background: #131313;
+}
+
+.navbar {
+  padding-left: 92px;
+  padding-top: 24px;
+  padding-right: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  margin-right: 65px;
+  margin-left: 84px;
+}
+
+.item a {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tel {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: right;
+  text-decoration-line: underline;
+
+  color: #e3b873;
+  margin-right: 45px;
+}
+
+.nav-button {
+  width: 161px;
+  height: 37px;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+.nav-button a {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  margin-left: 9px;
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 41px;
+}
+
+.menu li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.header-logo {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+.main-img {
+  object-fit: cover;
+}
+.main-section {
+  width: 1440px;
+  height: 707px;
+  background-image: url(/img/image3.png);
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.gardient {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 1440px;
+  height: 707px;
+}
+
+.main-text {
+  padding-top: 190px;
+  padding-left: 132px;
+  width: 650px;
+  height: 380px;
+}
+.main-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.main-title span {
+  color: #e3b873;
+}
+
+.main-parag {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+.left-btn {
+  width: 207px;
+  height: 51px;
+  background: #e3b873;
+  margin-right: 20px;
+}
+
+.main-button {
+  padding-top: 24px;
+}
+
+.right-btn {
+  width: 207px;
+  height: 51px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+.btn-text {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.section1 {
+  background: #131313;
+  width: 1440px;
+  height: 1074px;
+}
