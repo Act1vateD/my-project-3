@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+p,
 h1,
 h2,
 h3,
@@ -36,6 +36,7 @@ h6 {
   font-size: inherit;
   padding: 0;
   margin: 0;
+  color: #fff;
 }
 
 button,
@@ -47,54 +48,32 @@ input {
 html,
 body {
   height: 100%;
-  line-height: 1;
-  font-size: 16px;
-  color: black;
-  font-family: "Inter";
+  font-family: "Nunito Sans";
+  margin: 0;
 }
-
 .wrapper {
   max-width: 1440px;
-  min-height: 100%;
-  overflow: hidden;
   margin: 0 auto;
 }
-
-._container {
-  max-width: 1240px;
+.container {
+  max-width: 1258px;
   margin: 0 auto;
 }
-.header-logo {
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-
+.logo {
   color: #e3b873;
 }
 
 .header {
-  min-height: 83px;
   background: #131313;
 }
-
-.navbar {
-  padding-left: 92px;
-  padding-top: 24px;
-  padding-right: 92px;
+.header-content {
+  min-height: 83px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.navigation {
-  margin-right: 65px;
-  margin-left: 84px;
-}
-
-.item a {
+.navigation-menu__item a {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
@@ -105,89 +84,68 @@ body {
   text-decoration: none;
 }
 
-.tel {
+.nav-tel {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
-  text-align: right;
   text-decoration-line: underline;
 
   color: #e3b873;
-  margin-right: 45px;
 }
 
 .nav-button {
-  width: 161px;
-  height: 37px;
+  padding: 13px 33px;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
-}
-
-.nav-button a {
+  color: #ffffff;
   font-family: "Nunito Sans";
   font-style: italic;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
-  text-align: center;
   text-transform: uppercase;
+}
 
-  color: #ffffff;
+.navigation-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navigation-menu__item {
+  margin-right: 27px;
+}
+
+.navigation-menu__item a {
   text-decoration: none;
-}
-.menu {
-  list-style-type: none;
+  color: white;
 }
 
-.menu li {
-  margin-left: 9px;
-  display: inline-block;
-  justify-content: space-between;
-  margin-right: 41px;
-}
-
-.menu li:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.header-logo {
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-
-  color: #e3b873;
-}
 .main-img {
   object-fit: cover;
 }
 .main-section {
-  width: 1440px;
-  height: 707px;
-  background-image: url(/img/image3.png);
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
+  background-image: url(/img/image432.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .gardient {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  width: 1440px;
   height: 707px;
 }
 
 .main-text {
+  padding-left: 40px;
   padding-top: 190px;
-  padding-left: 132px;
-  width: 650px;
-  height: 380px;
 }
+
 .main-title {
   font-family: "Yeseva One";
   font-style: normal;
@@ -198,6 +156,7 @@ body {
 
   color: #ffffff;
 }
+
 .main-title span {
   color: #e3b873;
 }
@@ -241,8 +200,305 @@ body {
 
   color: #ffffff;
 }
-.section1 {
+
+.block1 {
   background: #131313;
-  width: 1440px;
-  height: 1074px;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  max-height: auto;
+}
+
+.section1-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+
+.section1-parag {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.section1-leftcontent {
+  margin-top: 173px;
+  margin-left: 40px;
+}
+
+.section1-rightcontent {
+  margin-top: 100px;
+  margin-right: 40px;
+}
+
+.section-list {
+  display: flex;
+}
+
+.left_cont-parag {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: #ffffff;
+  margin-top: 10px;
+}
+.rightcontent-name {
+  display: flex;
+  justify-content: space-between;
+}
+.section1-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+.left_cont-name {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+
+  margin-top: 45px;
+  margin-right: 65px;
+}
+
+.left_cont-name4 {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+  margin-top: 66px;
+}
+.right_cont-name {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+
+.rightcontent-img {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 416px;
+}
+.arrows {
+  display: flex;
+  margin-top: 65px;
+}
+.arrows li {
+  margin-right: 22px;
+}
+.control-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.videocontrol {
+  margin-top: -25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videocontrol ul {
+  display: flex;
+  justify-content: center;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+
+.videocontrol li {
+  margin: 5px;
+}
+.video_capture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-image: url(/img/image\ 6.png);
+  width: 817px;
+  height: 434px;
+}
+
+.button-play__warp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e3b873;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-play {
+  background: #e3b873;
+}
+
+.poas {
+  margin-left: 9px;
+  margin-top: 5px;
+}
+
+.block2 {
+  min-height: auto;
+}
+
+.section3-text {
+  max-width: 680px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #363636;
+  margin-top: 30px;
+}
+
+.rectangle {
+  width: 55px;
+  height: 1.5px;
+  background: #e3b873;
+  border-radius: 30px;
+}
+.section3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rect {
+  width: 55px;
+  height: 2px;
+  background: #e3b873;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.application-button {
+  background: #e3b873;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+}
+
+.application-form {
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.checkbox.style-c {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox.style-c input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark {
+  background-color: #e3b873;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkbox.style-c:hover input ~ .checkbox__checkmark {
+  background-color: #eee;
+}
+.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+  background-color: #e3b873;
+}
+.checkbox.style-c .checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.checkbox.style-c .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.checkbox.style-c .checkbox__body {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163.68%;
+  /* or 23px */
+
+  color: #181818;
 }
