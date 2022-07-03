@@ -51,10 +51,6 @@ body {
   font-family: "Nunito Sans";
   margin: 0;
 }
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 .container {
   max-width: 1258px;
   margin: 0 auto;
@@ -375,6 +371,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 5;
 }
 
 .button-play {
@@ -391,16 +388,16 @@ body {
 }
 
 .section3-text {
-  max-width: 680px;
+  max-width: 650px;
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 37px;
-  text-align: center;
 
   color: #363636;
   margin-top: 30px;
+  text-align: center;
 }
 
 .rectangle {
@@ -411,7 +408,7 @@ body {
 }
 .section3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -426,18 +423,57 @@ body {
   align-items: center;
   margin-top: 62px;
 }
-
 .application-button {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  width: 200px;
+  height: 51px;
   background: #e3b873;
   box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
   border-radius: 2px;
+  text-align: center;
 }
 
 .application-form {
   margin-top: 100px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.name-form input {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+
+  color: #363636;
+  margin-right: 50px;
+  width: 231px;
+  height: 30px;
+  border-bottom: 2px solid rgba(54, 54, 54, 0.3);
+}
+
+.name-form p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.name-form input::placeholder {
+  font-size: 14px;
 }
 
 .checkbox.style-c {
@@ -501,4 +537,444 @@ body {
   /* or 23px */
 
   color: #181818;
+}
+
+.types-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #181818;
+  margin-top: 147px;
+}
+
+.types-img {
+  margin-top: 15px;
+}
+
+.types-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.first-type {
+  margin-right: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.third-type {
+  margin-left: 40px;
+}
+
+.type-list__title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #363636;
+}
+
+.type-list__item {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+
+  color: #959595;
+}
+
+.type-button {
+  width: 228px;
+  height: 54px;
+  background: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-left: 31px;
+  margin-top: -50%;
+  filter: brightness(100%);
+}
+
+.type-text {
+  width: 330px;
+  height: 286px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin-top: -33%;
+  margin-left: 31px;
+  padding: 25px 34px;
+  z-index: 7;
+  filter: brightness(100%);
+}
+
+.type-list {
+  margin-top: 13px;
+}
+.section4-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section4-background {
+  background: url(/img/image\ 6.1.svg);
+  width: 703px;
+  height: 645px;
+  margin-top: 124px;
+  margin-left: -90px;
+  background-repeat: no-repeat;
+}
+
+.section4-list {
+  counter-reset: num;
+  margin-left: 150px;
+}
+
+.ol_color {
+  color: #363636;
+}
+.section4-list__item {
+  position: relative;
+  min-height: 40px;
+  margin-top: 110px;
+  margin-left: 75px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+}
+.section4-list__item:before {
+  content: "0" counter(num);
+  counter-increment: num;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  background: #e3b873;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  left: 13px;
+  top: -0px;
+
+  font-family: "Yeseva One";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section4-form {
+  background-color: #131313;
+  width: 506px;
+  height: 509px;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4__application-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  line-height: 25.78px;
+  max-width: 270px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 28px;
+}
+
+.form-text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.section4__name-form input::placeholder {
+  font-size: 14px;
+  color: #ffffff;
+}
+.section4__name-form input {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+
+  width: 408px;
+  height: 30px;
+  border-bottom: 2px solid rgba(54, 54, 54, 0.3);
+  background-color: #131313;
+}
+
+.section4-checkbox__body {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163.68%;
+  /* or 23px */
+
+  color: #ffffff;
+}
+
+.section4-checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.section4-checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.section4-checkbox {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section4-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.section4-checkbox input:checked ~ .section4-checkbox__checkmark {
+  background-color: #e3b873;
+}
+.section4-checkbox input:checked ~ .section4-checkbox__checkmark:after {
+  opacity: 1;
+}
+.section4-checkbox:hover input ~ .section4-checkbox__checkmark {
+  background-color: #eee;
+}
+.section4-checkbox:hover input:checked ~ .section4-checkbox__checkmark {
+  background-color: #e3b873;
+}
+
+.section4__application-form button {
+  margin-left: 210px;
+  margin-top: 35px;
+}
+
+.section4__name-form {
+  margin-top: 40px;
+}
+
+.special-offer {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  margin-right: 160px;
+}
+
+.offer-text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #e3b873;
+  margin-bottom: 20px;
+
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.block3 {
+  min-height: auto;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section5 {
+  position: relative;
+  background-image: url(/img/image\ 5.1.png);
+  max-width: 1440px;
+  max-height: 864px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.section5-title {
+  position: relative;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #e3b873;
+  z-index: 5;
+  margin-top: 132px;
+  margin-left: 90px;
+}
+
+.section5-list__item {
+  position: relative;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+
+  color: #ffffff;
+  z-index: 5;
+  margin-bottom: 13px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section5-img_item1 {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: -4.8%;
+  left: 41.5%;
+  z-index: 5;
+}
+
+.section5-img_item2 {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 64.5%;
+  left: 41.5%;
+  z-index: 5;
+}
+.section5-img_item3 {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: -13%;
+  left: 69%;
+  z-index: 5;
+}
+.section5-img_item4 {
+  max-width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 23%;
+  left: 69%;
+  z-index: 5;
+}
+
+.section5-img-wrap {
+  display: flex;
+}
+
+.section5-list {
+  margin-top: 42px;
+  margin-left: 90px;
+  margin-bottom: 90px;
+}
+
+.section6 {
+  max-height: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section6-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #181818;
+  margin-top: 100px;
+}
+
+.section6_control-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section6_control-img li {
+  margin: 3px;
+}
+.section6-parag {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #363636;
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
