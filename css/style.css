@@ -1815,13 +1815,14 @@ Animations
   }
 
   .section1-mobile {
-    display: flex;
+    display: none;
   }
 
   .hamburger {
     display: block;
   }
   .clients-section {
+    margin-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -1834,13 +1835,34 @@ Animations
     display: none;
   }
 
+  .section6-title {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #181818;
+    margin-top: 100px;
+  }
+
   .types-section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
   .question-form__block {
+    margin-top: -240px;
     max-width: 680px;
+  }
+  .types-title {
+    padding-top: 30px;
+  }
+
+  .types-section {
+    margin-top: 50px;
   }
   .map iframe {
     width: 600px;
@@ -1915,10 +1937,13 @@ Animations
   .section-list li:nth-of-type() {
     margin-left: -10px;
   }
-  .arrows {
-    position: absolute;
-    left: 37%;
-    top: 113%;
+
+  .arrow {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .videocontrol {
     margin-top: -260px;
@@ -1964,6 +1989,10 @@ Animations
   .block4 {
     margin-top: -30px;
   }
+
+  .section5 .overlay {
+    height: 750px;
+  }
   .section5 {
     position: relative;
     height: 750px;
@@ -1974,6 +2003,13 @@ Animations
   }
   .section5-list {
     margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .client-items:nth-of-type(1) {
+    margin-right: 20px;
+  }
+  .client-items:nth-of-type(2) {
     margin-left: 20px;
   }
 
@@ -2015,9 +2051,9 @@ Animations
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
-    max-width: 375px;
+    max-width: 376px;
     margin: 0 auto;
   }
 
@@ -2169,6 +2205,11 @@ Animations
 
   .section1-mobile {
     display: flex;
+    background: url(/img/image\ 22.png);
+    width: 340px;
+    height: 242px;
+    margin-left: -13px;
+    margin-top: 30px;
   }
 
   .section1-parag {
@@ -2199,14 +2240,14 @@ Animations
   }
   .section1-mobile .button:nth-of-type(1) {
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 44%;
+    left: 8%;
   }
 
   .section1-mobile .button:nth-of-type(2) {
     position: absolute;
-    top: 40%;
-    right: 4%;
+    top: 44%;
+    right: 8.5%;
   }
 
   .section1-leftcontent {
@@ -2434,12 +2475,14 @@ Animations
   }
 
   .section5 {
+    position: relative;
     margin-top: 0;
     margin-bottom: -325px;
     position: relative;
     background-image: url(/img/image\ 5.1.png);
     width: 340px;
     height: 242px;
+    z-index: 15;
   }
 
   .section5-mobile {
@@ -2447,7 +2490,6 @@ Animations
   }
 
   .section5-mobile .button {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2459,7 +2501,7 @@ Animations
   .section5-mobile .button:nth-of-type(1) {
     position: absolute;
     margin-top: 97px;
-    top: 50%;
+    top: 0;
     left: 4%;
     z-index: 15;
   }
@@ -2469,6 +2511,7 @@ Animations
     margin-top: 97px;
     top: 0;
     right: 4%;
+    z-index: 15;
   }
 
   .title-mobile {
@@ -2546,7 +2589,7 @@ Animations
   }
 
   .question-form__block {
-    width: 380px;
+    width: 376px;
     height: 655px;
   }
 
@@ -2683,17 +2726,19 @@ Animations
 
     text-align: center;
     text-transform: uppercase;
-
     color: #e3b873;
-    margin-top: 50px;
+  }
+  .section7M-title {
+    margin-top: 20px;
+    display: flex;
+    width: 340px;
+    padding-left: 32px;
   }
 
   .section7M-img {
-    position: relative;
     display: flex;
     justify-content: center;
     padding-bottom: 3%;
-    z-index: 15;
     margin-top: 20px;
     padding-bottom: 60px;
   }
@@ -2907,8 +2952,7 @@ Animations
     margin-top: 20px;
     margin-left: 0px;
   }
-  .section7M-title {
-    display: flex;
+  .section7M-title h2 {
     font-family: "Yeseva One";
     font-style: normal;
     font-weight: 400;
@@ -2918,9 +2962,11 @@ Animations
 
     text-align: center;
     text-transform: uppercase;
-    margin-top: -20px;
     color: #e3b873;
-    z-index: 15;
+  }
+  .section7M-title {
+    margin-top: 20px;
+    display: flex;
     width: 340px;
     padding-left: 20px;
   }
